@@ -8,11 +8,23 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(rnaturalearth)
+library(mapview)
+peru <- ne_states(country = 'peru')
 
 
+library (raster)
+library(rgdal)
+#cargamos el shape
+dist.map <- readOGR(dsn="C:/Users/Lenovo/Desktop/covid_pe/data/distritos/DISTRITOS.shp")
 
+LIMA_METRO <- c("150101","150102","150103","150104","150105","150106","150107","150108","150109",
+  "150110","150111","150112", "150113", "150114","150115","150116","150117","150118",
+  "150119","150120","150121","150122","150123","150124","150125",  "150126","150127","150128",
+  "150129","150130","150131","150132","150133","150134","150135","150136","150137","150138",
+  "150139","150140","150141","150142","150143")#CREAMOS EL OBJETO region que guarda el nombre ICA
 
-
+distritos_lima <- dist.map[as.character(dist.map@data$IDDIST) %in% LIMA_METRO, ]
 
 
 ```
@@ -89,7 +101,7 @@ Column {data-width=750}
 ### Número total de casos por departamento
 
 ```{r}
-
+mapview(peru)
 ```
 
 
@@ -102,10 +114,10 @@ Column {data-width=750}
 Column {data-width=750}
 -----------------------------------------------------------------------
 
-### Correlacion Espacial
+### Lima Metropolitana
 
 ```{r}
-
+mapview(distritos_lima)
 ```
 
 Spatitial
