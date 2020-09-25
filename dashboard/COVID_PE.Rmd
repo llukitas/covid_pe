@@ -1,0 +1,125 @@
+---
+title: "COVID19 PE"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+
+
+
+
+
+
+```
+
+
+
+Resumen
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+
+
+
+### Acumulado de Casos Positivos
+
+```{r}
+n=835456
+valueBox(n, icon = "fa-user-md",color = "purple")
+
+```
+
+
+### Casos Activos
+
+```{r}
+n=835456
+valueBox(n, icon = "fa-user-plus",color = "orange")
+
+```
+
+
+
+
+### Casos Recuperados
+
+```{r}
+#comments <- computeComments()
+valueBox(20564, icon = "fa-street-view",color = "forestgreen")
+```
+
+### Hospitalizados
+
+```{r}
+#spam <- computeSpam()
+valueBox(9255, icon = "fa-hospital-o",color = "red")
+
+```
+
+
+
+### Camas UCI
+
+```{r}
+#comments <- computeComments()
+valueBox(1205, icon = "fa-bed",color = "teal")
+```
+
+### Fallecidos
+
+```{r}
+#spam <- computeSpam()
+valueBox(30000, icon = "fa-heartbeat",color = "olive")
+
+```
+
+
+
+
+
+Column {data-width=750}
+-----------------------------------------------------------------------
+
+### Número total de casos por departamento
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+Column {data-width=750}
+-----------------------------------------------------------------------
+
+### Correlacion Espacial
+
+```{r}
+
+```
+
+Spatitial
+=======================================================================
+
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart D
+
+```{r}
+
+```
+
+
