@@ -3,7 +3,7 @@
     "path": "C:/Users/Lenovo/Desktop/covid_pe/dashboard/COVID_PE.Rmd",
     "project_path": "COVID_PE.Rmd",
     "type": "r_markdown",
-    "hash": "122959244",
+    "hash": "1328498691",
     "contents": "",
     "dirty": false,
     "created": 1601005333219.0,
@@ -11,15 +11,16 @@
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "12,35",
-        "scrollLine": "0"
+        "cursorPosition": "271,211",
+        "scrollLine": "259",
+        "last_setup_crc32": "45C92EFAe52556da"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601068815,
+    "lastKnownWriteTime": 1601336827,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601068815830,
+    "last_content_update": 1601336827171,
     "read_only": false,
     "read_only_alternatives": []
 }
